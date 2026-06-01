@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * [SWEA] 2071. 평균값 구하기
+ * [SWEA] 2071. 평균값 구하기 (260531)
  *
- * 시간복잡도 : O(T)
+ * 시간복잡도 : O(1)
  * - 내부는 10번 고정 O(1), 전체는 O(T*10) = O(T)
  *
  * 풀이과정
