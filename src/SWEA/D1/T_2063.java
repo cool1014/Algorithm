@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
- * [SWEA] 2068. 2063. 중간값 찾기 (260601)
+ * [SWEA] 2063. 중간값 찾기 (260601)
  *
  * 시간복잡도 : O(NlogN)
  * - Array.sort()의 경우 퀵정렬을 사용하므로 전체 시간복잡도는 O(NlogN)이 됨
