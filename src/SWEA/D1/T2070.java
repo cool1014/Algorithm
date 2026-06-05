@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * 풀이과정
  * - if문을 활용해 숫자 비교 후 부등호 출력
  */
-public class T_2070 {
+public class T2070 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

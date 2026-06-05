@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * - 2. 격자판 전체 순회 범위 설정 (i-m+1)(j-m+1)
  * - 3. 파리채 영역 안의 합 계산
  */
-public class T_2001 {
+public class T2001 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

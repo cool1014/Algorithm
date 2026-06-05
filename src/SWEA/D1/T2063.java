@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * 풀이과정
  * - 배열에 입력값을 대입하고 정렬함수를 사용해 중앙값 도출
  */
-public class T_2063 {
+public class T2063 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
  *
  * * 조합 : 서로 다른 n개의 원소에서 r(0<r<=n)개를 중복 없이 순서를 고려하지 않고 선택하는 것
  */
-public class T_2005 {
+public class T2005 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

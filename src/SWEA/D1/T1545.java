@@ -5,25 +5,23 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * [SWEA] 2019. 더블더블 (260602)
- *
+ * [SWEA] 1545. 거꾸로 출력해 보아요 (260602)
+ * <p>
  * 시간복잡도 : O(1)
- *
+ * <p>
  * 풀이과정
  * -
  */
-public class T_2019 {
+public class T1545 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());
+        sb.append(n);
 
-        sb.append(1);
-
-        int result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= 2;
-            sb.append(" ").append(result);
+        while (n > 0) {
+            n -= 1;
+            sb.append(" ").append(n);
         }
         System.out.println(sb);
     }

@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
  *
  * % int의 최대 범위는 약21억 => long을 사용해라...
  */
-public class T_1859 {
+public class T1859 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

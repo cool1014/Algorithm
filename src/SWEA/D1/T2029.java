@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * 풀이과정
  * -
  */
-public class T_2029 {
+public class T2029 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());

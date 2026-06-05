@@ -6,29 +6,33 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * [SWEA] 2068. 최대수 구하기 (260601)
+ * [SWEA] 2072. 홀수만 더하기 (260531)
  *
  * 시간복잡도 : O(1)
- * - 10*T만큼 처리
+ * - 내부는 10번만 고정으로 돌기 때문에 O(1)이고 전체는 O(T * 10) = O(T)가 됨
  *
- * 풀이과정
- * - maxV 변수에 입력값중 가장 작은 값을 넣고
- * - 숫자를 비교해 큰 수로 값을 대입
+ * 풀이 과정
+ * - 10번 루프를 돌며 홀수 일때만 sum에 누적
  */
-public class T_2068 {
+public class T2072 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int T = Integer.parseInt(br.readLine());
 
         for (int tc = 1; tc <= T; tc++) {
+            int sum = 0;
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-            int maxV = 0;
 
             for (int i = 0; i < 10; i++) {
                 int num = Integer.parseInt(st.nextToken());
-                if (maxV < num) maxV = num;
+                if (num % 2 == 1) {
+                    sum += num;
+                }
             }
-            System.out.println("#" + tc + " " + maxV);
+            System.out.println("#" + tc + " " + sum);
+
+
         }
     }
 }

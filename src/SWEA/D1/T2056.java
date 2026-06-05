@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  * 풀이과정
  * - substring()를 활용해 년원일로 나누고 유효한 날짜인지 검사
  */
-public class T_2056 {
+public class T2056 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());

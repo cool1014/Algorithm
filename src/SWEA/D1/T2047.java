@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
  * 풀이과정
  * - toUpperCase() 메서드 사용
  */
-public class T_2047 {
+public class T2047 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

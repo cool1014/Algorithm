@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
  * - 투 포인터를 활용
  * - 문자열의 처음과 마지막 단어를 하나씩 비교
  */
-public class T_1989 {
+public class T1989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

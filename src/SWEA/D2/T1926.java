@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
  *
  * % SWEA에서는 버전이 달라서 repeat 메서드 사용 안됨.
  */
-public class T_1926 {
+public class T1926 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

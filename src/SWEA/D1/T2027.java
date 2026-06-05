@@ -8,7 +8,7 @@ package SWEA.D1;
  * 풀이과정
  * -
  */
-public class T_2027 {
+public class T2027 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         sb.append("#++++\n").append("+#+++\n").append("++#++\n").append("+++#+\n").append("++++#");

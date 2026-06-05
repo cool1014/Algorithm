@@ -6,34 +6,29 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * [SWEA] 2071. 평균값 구하기 (260531)
+ * [SWEA] 2068. 최대수 구하기 (260601)
  *
  * 시간복잡도 : O(1)
- * - 내부는 10번 고정 O(1), 전체는 O(T*10) = O(T)
+ * - 10*T만큼 처리
  *
  * 풀이과정
- * - 10번 루프를 돌며 sum에 누적
- * - Math.round(); 메서드를 활용해 sum을 10.0으로 나누고 int 변환
+ * - maxV 변수에 입력값중 가장 작은 값을 넣고
+ * - 숫자를 비교해 큰 수로 값을 대입
  */
-public class T_2071 {
+public class T2068 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
 
         for (int tc = 1; tc <= T; tc++) {
-            int sum = 0;
-
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            int maxV = 0;
 
             for (int i = 0; i < 10; i++) {
                 int num = Integer.parseInt(st.nextToken());
-                sum += num;
-
+                if (maxV < num) maxV = num;
             }
-            // 정수를 /로 나누면 버림이 되므로 10.0으로 나눠 소수점 살리고 형변환
-            int avg = (int) Math.round(sum / 10.0);
-
-            System.out.println("#" + tc + " " + avg);
+            System.out.println("#" + tc + " " + maxV);
         }
     }
 }

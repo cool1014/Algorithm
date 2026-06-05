@@ -6,25 +6,26 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * [SWEA] 1936. 1대1 가위바위보 (260602)
- *
+ * [SWEA] 1938. 아주 간단한 계산기 (260602)
+ * <p>
  * 시간복잡도 : O(1)
- *
+ * <p>
  * 풀이과정
  * -
  */
-public class T_1936 {
+public class T1938 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
-        if ((a == 2 && b == 1) || (a == 3 && b == 2) || (a == 1 && b == 3)) {
-            System.out.println("A");
-        } else {
-            System.out.println("B");
-        }
+        sb.append(a+b).append("\n");
+        sb.append(a-b).append("\n");
+        sb.append(a*b).append("\n");
+        sb.append(a/b).append("\n");
+
+        System.out.println(sb);
     }
 }

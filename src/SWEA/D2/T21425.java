@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * - A혹은 B의 값이 연산으로 N 초과가 되기 위한 최소한의 수를 구하는 문제이므로
  * - while 문을 활용해 A와B 중 더 큰 값을 더해줌
  */
-public class T_21425 {
+public class T21425 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

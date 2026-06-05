@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
  * - substring() 메서드를 활용하여 문자열을 동일한 길이 i만큼 두 구간으로 쪼갬
  * - 두 마디가 일치한다면 max값에 i를 저장하고 break!
  */
-public class T_2007 {
+public class T2007 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
